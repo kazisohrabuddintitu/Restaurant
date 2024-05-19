@@ -1,8 +1,10 @@
 from rest_framework import generics, status
 from rest_framework.response import Response
+from .models import Order
 from .serializers import OrderSerializer
 
 class OrderCreateAPIView(generics.CreateAPIView):
+    queryset = Order.objects.all()
     serializer_class = OrderSerializer
 
     def create(self, request, *args, **kwargs):
