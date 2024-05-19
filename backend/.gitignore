@@ -28,13 +28,16 @@ Temporary Items
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
-./core/__pycache__/
-/core/__pycache__
+
+
 
 ./kazirestaurant/__pycache__/
 /manager/__pycache__
+./manager/__pycache__/
 /order/__pycache__
+./order/__pycache__/
 /products/__pycache__
+./products/__pycache__/
 
 # C extensions
 *.so
