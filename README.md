@@ -2,6 +2,8 @@
 
 This document outlines KaziRestaurant, a Django-based web application designed for managing a restaurant's orders, products, and user accounts. It utilizes PostgreSQL as its database and employs Docker for containerized deployment, encompassing a frontend, backend, and database service.
 
+## Django-Vuejs
+
 ### Features
 
 - User authentication and management system
@@ -33,9 +35,8 @@ Here's a breakdown of the project's directory structure:
 │       └── wsgi.py (WSGI entry point for the Django application)
 ├── frontend (Frontend code for the web application)
 │   ├── Dockerfile (Defines build instructions for the frontend container)
-│   ├── public (Contains static assets for the frontend)
-│   └── src (Houses the core frontend code)
-├── db (Directory for storing PostgreSQL data)
+│   ├── kazirestaurant_vue (Contains the frontend)
+│   
 └── docker-compose.yml (Defines configuration for managing Docker containers)
 ```
 
