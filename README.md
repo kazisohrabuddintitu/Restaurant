@@ -68,7 +68,8 @@ Follow these steps to set up your development environment:
 3. **Build and Run Docker Containers:**
 
    ```bash
-   docker-compose up --build
+   docker-compose build
+   docker-compose up
    ```
 
    This command will build separate Docker images for the frontend, backend, and database services, and then start the corresponding containers.
@@ -99,7 +100,7 @@ docker-compose down
 If you make changes to either the `Dockerfile` or `requirements.txt` files, you'll need to rebuild the Docker containers before the changes take effect:
 
 ```bash
-docker-compose up --build
+docker-compose build
 ```
 
 This README provides a comprehensive guide to setting up and developing the KaziRestaurant application. Feel free to explore the code and customize it to suit your specific restaurant management needs.
