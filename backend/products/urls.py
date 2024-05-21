@@ -8,6 +8,5 @@ router.register(r'products', ItemViewSet)
 
 # Define the URL patterns
 urlpatterns = [
-    # Include the product endpoints with the prefix <int:pk>/
     path('', include(router.urls)),
 ]
